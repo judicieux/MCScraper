@@ -12,24 +12,21 @@ def logo():
     ██║ ╚═╝ ██║╚██████╗███████║╚██████╗██║  ██║██║  ██║██║     ███████╗██║  ██║
     ╚═╝     ╚═╝ ╚═════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝
                                                                            
-                    [{Fore.BLUE}+{Fore.RED}] https://github.com/bodensee886 [{Fore.BLUE}+{Fore.RESET}]
+ [{Fore.BLUE}+{Fore.RED}] https://github.com/bodensee886 [{Fore.BLUE}+{Fore.RESET}]
 """
     print(a)
 
 def skins():
     print('\n' + f'{Fore.GREEN}[+] Skins [+]\n' + Fore.RESET)
     content = soup.find_all('a', href=True)
-
     if not os.path.isdir(pseudomc):
         os.mkdir(pseudomc)
-
     for tag in content:
         if "/skin" in tag['href']:
             skin_id = tag['href'].split("/")[-1]
             img = requests.get("https://fr.namemc.com/texture/" + skin_id).content
             with open(pseudomc + "/" + skin_id + ".png", "wb") as handler:
                 handler.write(img)
-
     print(f'{Fore.RED}Check in path > /' + pseudomc)
 
 def old_nicknames():
