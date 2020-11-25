@@ -1,2 +1,2 @@
-<img src=/img/mcscraper.png>
+<img src=/img/mcscraper.png><br>
 # MCScraper
