@@ -12,7 +12,7 @@ def logo():
     ██║ ╚═╝ ██║╚██████╗███████║╚██████╗██║  ██║██║  ██║██║     ███████╗██║  ██║
     ╚═╝     ╚═╝ ╚═════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝
                                                                            
- [{Fore.BLUE}+{Fore.RED}] https://github.com/bodensee886 [{Fore.BLUE}+{Fore.RESET}]
+ [{Fore.BLUE}+{Fore.RED}] https://github.com/hypostat1c [{Fore.BLUE}+{Fore.RESET}]
 """
     print(a)
 
